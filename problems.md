@@ -1,3 +1,5 @@
+## Struktura programu
+
 ### problem001
 
 Napisz funkcję wyliczającą pole trójkąta o zadanych bokach (kolejne boki trójką są argumentami funkcji). Wyliczone pole 
@@ -87,3 +89,8 @@ Przykład:
 console.log(runIt((a, b) => a + b, 3, 5)); // 8
 ```
 
+## Obiekty i tablice
+
+### problem010
+
+Napisz funkcję kopiującą 
