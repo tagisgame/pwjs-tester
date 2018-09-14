@@ -1,0 +1,10 @@
+let _correct = 0;
+let _failed = 0;
+const test = (test) => { if (test) { _correct++; } else { _failed++; }; };
+test(triangleArea(3, 4, 5) === 6);
+test(triangleArea(3, 3, 3) === 3.9);
+test(triangleArea(3, 6, 7) === 8.94);
+test(triangleArea(3, 4, 10) === -1);
+test(triangleArea(3, 4, -5) === -1);
+test(triangleArea(3, 4, 0) === -1);
+[_correct, _failed];
