@@ -3,7 +3,7 @@ const {VM} = require('vm2');
 const { crc32 } = require('crc');
 
 const studentHash = process.argv[2] || '';
-const problems = ['problem001', 'problem002', 'problem003', 'problem004'];
+const problems = ['problem001', 'problem002', 'problem003', 'problem004', 'problem005'];
 let result = [];
 
 for (let problem of problems) {
