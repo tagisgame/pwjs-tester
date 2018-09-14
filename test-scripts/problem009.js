@@ -1,0 +1,10 @@
+let _correct = 0;
+let _failed = 0;
+let _failedTests = [];
+const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failedTests.push(id); }; };
+test(1, runIt((a, b) => a + b, 3, 5) === 8);
+test(2, runIt((a, b) => a * b, 3, 3) === 9);
+test(3, runIt((a, b) => a - b, 3, 4) === -1);
+test(4, runIt((a, b) => a + b, 'a', 'b') === 'ab');
+test(5, runIt(() => -1, 1, 1) === -1);
+[_correct, _failed, _failedTests];

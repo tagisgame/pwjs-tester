@@ -75,3 +75,15 @@ każdy kolejny element jest wyliczany na podstawie wzoru: `magicSequence(a - 1) 
 function magicSequence(a) {...
 ```
 
+### problem009
+
+Napisz funkcję przyjmującą trzy argumenty: pierwszy z nich jest funkcją anonimową, która zostanie wykonana, a na jej
+wejście podane zostaną pozostałe dwa argumenty funkcji `runIt`. Funkcja zwraca wynik wykonanej funkcji anonimowej.
+```
+function runIt(a, b, c) {...
+```
+Przykład:
+```
+console.log(runIt((a, b) => a + b, 3, 5)); // 8
+```
+
