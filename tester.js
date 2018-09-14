@@ -10,11 +10,11 @@ for (let problem of problems) {
     let studentScriptPath = './student-scripts/' + problem + '.js';
     let testScriptPath = './test-scripts/' + problem + '.js';
     if (fs.existsSync(studentScriptPath) === false) {
-        result.push([problem, 'failed', [0, 0], 'The student\'s script does not exist.', '']);
+        result.push([problem, 'failed', [0, 0, []], 'The student\'s script does not exist.', '']);
         continue;
     }
     if (fs.existsSync(studentScriptPath) === false) {
-        result.push([problem, 'failed', [0, 0], 'The test\'s script does not exist.', '']);
+        result.push([problem, 'failed', [0, 0, []], 'The test\'s script does not exist.', '']);
         continue;
     }
     let studentScript = fs.readFileSync(studentScriptPath, 'utf8');
