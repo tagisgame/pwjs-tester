@@ -26,3 +26,11 @@ Napisz funkcję sprawdzającą czy podany jako argument rok, jest przestępny. Z
 ```
 function isLeapYear(a) {...
 ```
+
+### problem004
+
+Napisz funkcję zwracającą liczbę wszystkich pierwszych stycznia z podanego zakresu lat, które były/są/będą niedzielą. 
+Pierwszy argument to rok, od którego rozpoczynamy szukanie (włącznie), drugi to rok, do którego szukamy (włącznie).
+```
+function getTotalNumberOfNewYaersEveSundays(a, b) {...
+```

@@ -8,7 +8,7 @@ const vm = new VM({
 });
 
 const studentHash = process.argv[2] || '';
-const problems = ['problem001', 'problem002', 'problem003'];
+const problems = ['problem001', 'problem002', 'problem003', 'problem004'];
 let result = [];
 
 for (let problem of problems) {
