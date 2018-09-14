@@ -16,8 +16,8 @@ for (let problem of problems) {
         result.push([problem, 'failed', [0, 0], 'The test\'s script does not exist.']);
         continue;
     }
-    let studentScript = fs.readFileSync(studentScriptPath);
-    let testScript = fs.readFileSync(testScriptPath);
+    let studentScript = fs.readFileSync(studentScriptPath, 'utf8');
+    let testScript = fs.readFileSync(testScriptPath, 'utf8');
     try {
         let vm = new VM({
             timeout: 1000,
