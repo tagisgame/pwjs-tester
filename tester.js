@@ -1,11 +1,5 @@
 const fs = require('fs');
 const {VM} = require('vm2');
- 
-const vm = new VM({
-    timeout: 1000,
-    sandbox: {},
-    console: 'off'
-});
 
 const studentHash = process.argv[2] || '';
 const problems = ['problem001', 'problem002', 'problem003', 'problem004'];
@@ -25,6 +19,11 @@ for (let problem of problems) {
     let studentScript = fs.readFileSync(studentScriptPath);
     let testScript = fs.readFileSync(testScriptPath);
     try {
+        let vm = new VM({
+            timeout: 1000,
+            sandbox: {},
+            console: 'off'
+        });
         let testResult = vm.run(studentScript + "\n" + testScript);
         if (testResult[1] > 0) {
             result.push([problem, 'failed', testResult, 'The tests failed.']);
