@@ -42,3 +42,15 @@ funkcja zwraca normalną sumę ich wartości. Jeżeli na wejście funkcji zostan
 function strangeSum(a, b) {...
 ```
 
+### problem006
+
+Napisz funkcję, która sprawdza, czy podana jako pierwszy argument, liczba jest podzielna przez kolejne podane na wejście funkcji.
+Funkcja musi zwracać wartość logiczną, `true` w przypadku podzielności, `false` w przeciwnym.
+```
+function divisible(a) {...
+```
+Przykład:
+```
+console.log(divisible(15, 3, 5)); // true
+console.log(divisible(15, 3, 5, 6)); // false
+```
