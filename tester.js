@@ -40,6 +40,6 @@ for (let problem of problems) {
 console.log("Student hash: " + studentHash);
 for (let record of result) {
     console.log("Problem: " + record[0] + ", status: " + record[1] + ", tests: [" + record[2][0] + ", "
-        + record[2][1] + "], description: " + record[3] + ", CRC: " + record[4]);
+        + record[2][1] + ", " + record[2][2].join('; ') + "], description: " + record[3] + ", CRC: " + record[4]);
 }
 

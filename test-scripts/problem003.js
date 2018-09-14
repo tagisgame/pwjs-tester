@@ -1,9 +1,10 @@
 let _correct = 0;
 let _failed = 0;
-const test = (test) => { if (test) { _correct++; } else { _failed++; }; };
-test(isLeapYear(2008) === true);
-test(isLeapYear(2000) === true);
-test(isLeapYear(2007) === false);
-test(isLeapYear(2100) === false);
-test(isLeapYear(2200) === false);
-[_correct, _failed];
+let _failedTests = [];
+const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failedTests.push(id); }; };
+test(1, isLeapYear(2008) === true);
+test(2, isLeapYear(2000) === true);
+test(3, isLeapYear(2007) === false);
+test(4, isLeapYear(2100) === false);
+test(5, isLeapYear(2200) === false);
+[_correct, _failed, _failedTests];
