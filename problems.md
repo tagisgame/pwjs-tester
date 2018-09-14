@@ -54,3 +54,24 @@ Przykład:
 console.log(divisible(15, 3, 5)); // true
 console.log(divisible(15, 3, 5, 6)); // false
 ```
+
+### problem007
+
+Napisz funkcję zwracającą największą liczbę z podanych argumentów, liczba argumentów funkcji nie jest określona.
+```
+function findMax(a, b, ...) {...
+```
+Przykład:
+```
+console.log(findMax(15, 3, 5)); // 15
+console.log(findMax(5, 3, 5, 6)); // 6
+```
+
+### problem008
+
+Napisz rekurencyjną funkcję wyliczającą `n`-ty element ciągu, w którym pierwszy element (indeks równy jeden) jest równy `-1`, kolejne dwa elementy są równe `-2`, a 
+każdy kolejny element jest wyliczany na podstawie wzoru: `magicSequence(a - 1) * (a - 3)`.
+```
+function magicSequence(a) {...
+```
+
