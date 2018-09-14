@@ -1,0 +1,22 @@
+{
+  "name": "pwjs-tester",
+  "version": "1.0.0",
+  "description": "The automatic tool for testing students' JS solutions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazarow/pwjs-tester.git"
+  },
+  "author": "Arkadiusz Nowakowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lazarow/pwjs-tester/issues"
+  },
+  "homepage": "https://github.com/lazarow/pwjs-tester#readme",
+  "dependencies": {
+    "vm2": "^3.6.3"
+  }
+}
