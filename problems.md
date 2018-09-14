@@ -34,3 +34,11 @@ Pierwszy argument to rok, od którego rozpoczynamy szukanie (włącznie), drugi 
 ```
 function getTotalNumberOfNewYaersEveSundays(a, b) {...
 ```
+### problem005
+
+Napisz funkcję przyjmującą jako argumenty dwie liczby całkowite. Jeżeli liczby są równe to funkcja zwraca ich potrojoną sumę, w przeciwnym wypadku 
+funkcja zwraca normalną sumę ich wartości. Jeżeli na wejście funkcji zostanie przekazany nieprawidłowy typ, funkcja zwraca `null`.
+```
+function strangeSum(a, b) {...
+```
+
