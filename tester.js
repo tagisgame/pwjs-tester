@@ -33,7 +33,7 @@ for (let problem of problems) {
             result.push([problem, 'sucess', testResult, 'OK', studentScriptCRC]);
         }
     } catch (exception) {
-        result.push([problem, 'failed', [0, 0], exception.toString(), studentScriptCRC]);
+        result.push([problem, 'failed', [0, 0, []], exception.toString(), studentScriptCRC]);
     }
 }
 
