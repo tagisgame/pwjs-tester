@@ -29,11 +29,16 @@ for (let problem of problems) {
         if (testResult[1] > 0) {
             result.push([problem, 'failed', testResult, 'The tests failed.']);
         } else {
-            result.push([problem, 'sucess', testResult, '']);
+            result.push([problem, 'sucess', testResult, 'OK']);
         }
     } catch (exception) {
         result.push([problem, 'failed', [0, 0], exception.toString()]);
     }
 }
 
-console.log(result);
+console.log("Student hash: " + studentHash);
+for (let record of result) {
+    console.log("Problem: " + record[0] + ", status: " + record[1] + ", tests: [" + record[2][0] + ", "
+        + record[2][1] + "], description: " + record[3]);
+}
+
