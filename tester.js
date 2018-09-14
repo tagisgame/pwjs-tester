@@ -12,8 +12,8 @@ const problems = ['problem001', 'problem002', 'problem003'];
 let result = [];
 
 for (let problem of problems) {
-    let studentScriptPath = './../' + problem + '.js';
-    let testScriptPath = './test/' + problem + '.js';
+    let studentScriptPath = './student-scripts/' + problem + '.js';
+    let testScriptPath = './test-scripts/' + problem + '.js';
     if (fs.existsSync(studentScriptPath) === false) {
         result.push([problem, 'failed', [0, 0], 'The student\'s script does not exist.']);
         continue;
