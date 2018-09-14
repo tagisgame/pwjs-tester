@@ -1,7 +1,7 @@
 ### problem001
 
 Napisz funkcję wyliczającą pole trójkąta o zadanych bokach (kolejne boki trójką są argumentami funkcji). Wyliczone pole 
-zaokrąglij do dwóch miejsc po przecinku. W przypadku gdy pole trójkąta nie może zostać wyliczone, funkcja powinna zwrócić wartość `-1`.
+zaokrąglij do dwóch miejsc po przecinku (wynik musi być typem numerycznym). W przypadku gdy pole trójkąta nie może zostać wyliczone, funkcja powinna zwrócić wartość `-1`.
 Funkcja powinna przyjmować wyłącznie wartości większe od zera, również wówczas zwracana wartość to `-1`.
 ```
 function triangleArea(a, b, c) {...
