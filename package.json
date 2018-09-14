@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lazarow/pwjs-tester#readme",
   "dependencies": {
+    "crc": "^3.8.0",
     "vm2": "^3.6.3"
   }
 }
