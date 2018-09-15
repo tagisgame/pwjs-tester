@@ -124,3 +124,13 @@ Przykład:
 console.log(objectsDiff({x: 1, y: 1, z: 1}, {w: 2, x: 2, z: 2}); // ['y', 'w']
 ```
 
+### problem013
+
+Napisz funkcję zwracającą posortowaną tablicę przekazaną jako pierwszy argument funkcji, drugi argument funkcji musi mieć wartość `asc` lub `desc` (w przypadku podania 
+innej wartości funkcja zwraca wartość `false`). W zadaniu wykorzystać wbudowaną w język funkcję `Array.prototype.sort()`. Gdy drugi argument funkcji ma wartość `asc` 
+tablica powinna być posortowana rosnącą, dla wartości `desc` malejąco.
+```
+function parametricSort(a, b) {...
+```
+
+
