@@ -100,3 +100,13 @@ function deepCopy(a) {...
 ```
 
 ### problem011
+
+Napisz funkcję, której pierwszym argumentem jest wielowymiarowa tablica zawierająca dowolne wartości, drugi argument zawiera dowolną wartość. Funkcja zwraca 
+liczbę wystąpień podanej wartości we wszystkich wymiarach tablicy.
+```
+function deepFindAndCount(a, b) {...
+```
+Przykład:
+```
+console.log(deepFindAndCount([5, 3, 2, [5, 1], [[5]]], 5)); // 3
+```
