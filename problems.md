@@ -93,4 +93,10 @@ console.log(runIt((a, b) => a + b, 3, 5)); // 8
 
 ### problem010
 
-Napisz funkcję kopiującą 
+Napisz funkcję **kopiującą** wielowymiarową tablicę, tablica podana jest jako argument funkcji. Nowo utworzona tablica nie może zawierać elementów 
+będących referencją do orginalnej tablicy.
+```
+function deepCopy(a) {...
+```
+
+### problem011
