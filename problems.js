@@ -10,4 +10,5 @@ module.exports = [
 	'problem009',
 	'problem010',
 	'problem011',
+	'problem012',
 ];

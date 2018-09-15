@@ -110,3 +110,17 @@ Przykład:
 ```
 console.log(deepFindAndCount([5, 3, 2, [5, 1], [[5]]], 5)); // 3
 ```
+
+### problem012
+
+Napisz funkcję przyjmującą 2 obiekty jako swoje argumenty. Funkcja zwraca tablicę z nazwami własności obu obiektów z wyłączeniem własności, które znajdują się 
+w obu obiektach. Funkcja nie musi sprawdzać zagnieżdżonych obiektów. Wynikowa tablica powinna najpierw zawierać własności z pierwszego obiektu. Kolejność własności 
+powinna zostać zachowana.
+```
+function objectsDiff(a, b) {...
+```
+Przykład:
+```
+console.log(objectsDiff({x: 1, y: 1, z: 1}, {w: 2, x: 2, z: 2}); // ['y', 'w']
+```
+
