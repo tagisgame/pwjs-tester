@@ -8,5 +8,5 @@ test(3, magicSequence(3) === -2);
 test(4, magicSequence(4) === -2);
 test(5, magicSequence(5) === -4);
 test(6, magicSequence(6) === -12);
-test(7, magicSequence(6) === -958003200);
+test(7, magicSequence(15) === -958003200);
 [_correct, _failed, _failedTests];
