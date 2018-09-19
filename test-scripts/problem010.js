@@ -12,6 +12,6 @@ b = deepCopy(a);
 test(3, b.length === 0);
 a = [[[[99]]], 3];
 b = deepCopy(a);
-test(4, b[0][0][0] === 99);
+test(4, b[0][0][0][0] === 99);
 test(5, b[1] === 3);
 [_correct, _failed, _failedTests];
