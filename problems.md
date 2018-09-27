@@ -143,3 +143,10 @@ Obiekt powinnien implementować operacje:
 
 Operacje dodawania oraz mnożenia przez liczbę opisuje ten [dokument](http://wmii.uwm.edu.pl/~mariab/DYDAKTYKA_WSIiZ/Algebra%20liniowa/Materialy/02_Wektory_teoria.pdf).
 
+### problem015
+
+Stwórz obiekt `Stack`, różniący się od klasycznego stosu metodami `push` i `pop`, które mają mają dodatkowy argument. Stos powinien być pusty.
+Metoda `push(a, b)` doda na stos `b - 1` wartości `null` a nastepnie doda wartość przekazaną jako argument `a`. Podanie argumentu `b` jest opcjonalne, jego domyślna wartość to 1.
+Metoda `pop(a)` zdejmie ze stosu `a` elementów i zwróci ostatni z nich, tj. tego, którego dodano jako pierwszego. Podanie argumentu `a` jest opcjonalne, jego domyślna wartość to 1.
+
+
