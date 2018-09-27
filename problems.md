@@ -140,5 +140,6 @@ W przypadku gdy dana operacja nie może zostać przeprowadzona, metody powinny z
 Obiekt powinnien implementować operacje:
 - sumy: `sum(a, b)`, która dodaje dwa wektory `a` i `b` do siebie,
 - mnożenia przez liczbę: `mulByScalar(a, b)`, która mnoży wektor `a` przez liczbę `b`.
+
 Operacje dodawania oraz mnożenia przez liczbę opisuje ten [dokument](http://wmii.uwm.edu.pl/~mariab/DYDAKTYKA_WSIiZ/Algebra%20liniowa/Materialy/02_Wektory_teoria.pdf).
 
