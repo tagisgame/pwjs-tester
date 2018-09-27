@@ -1,0 +1,16 @@
+let _correct = 0;
+let _failed = 0;
+let _failedTests = [];
+const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failedTests.push(id); }; };
+test(1, JSON.stringify(Vectors.sum([1, 1], [1, 1])) === JSON.stringify([2, 2]));
+test(2, JSON.stringify(Vectors.sum([1, 1], [-1, -1])) === JSON.stringify([0, 0]));
+test(3, JSON.stringify(Vectors.sum([2], [2])) === JSON.stringify([4]));
+test(4, Vectors.sum([1, 1], [1]) === false);
+test(5, Vectors.sum([1, 1], "") === false);
+test(6, Vectors.sum("", [1]) === false);
+test(7, JSON.stringify(Vectors.mulByScalar([1, 1], 1)) === JSON.stringify([1, 1]));
+test(8, JSON.stringify(Vectors.mulByScalar([1, 1], 2)) === JSON.stringify([2, 2]));
+test(9, Vectors.mulByScalar([1, 1], [1]) === false);
+test(10, Vectors.mulByScalar([1, 1], "") === false);
+test(11, Vectors.mulByScalar("", "") === false);
+[_correct, _failed, _failedTests];
