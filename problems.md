@@ -151,4 +151,41 @@ Metoda `pop(a)` zdejmie ze stosu `a` elementów i zwróci ostatni z nich, tj. te
 
 ## Funkcje wyższego rzędu
 
+### problem016
 
+Napisz funkcję `maybe(a, b, c)`, gdzie `a` to predykat, czyli funkcja zwracająca wartość logiczną; `b` to dowolna funkcja, c jest dowolną wartością.
+Funkcja powinna zwracać wartość funkcji `b(c)` jeżeli `a` zwraca `true`, lub `x` w przeciwnym przypadku.
+```
+function maybe(a, b, c) {...
+```
+
+### problem017
+
+Napisz funkcję `compose()`, która zwróci nową funkcję złożoną na podstawie przekazanych przez argumenty funkcji czystych.
+Przekazane funkcje muszą być wykonane w kolejności od prawej do lewej. W przypadku gdy na wejście nie zostanie podany żaden argument, zwracana, nowa funkcja
+powinna przepisywać wartość.
+```
+function compose(...) {...
+```
+Przykład:
+```
+let fn1 = compose(x => x*2, x => x + 1, x => x - 5);
+console.log(fn1(100)); // 192
+let fn2 = compose();
+console.log(fn2(100)); // 100
+```
+
+### problem018
+
+Napisz funkcję `reverse(a)`, której wynikiem będzie nowa funkcja, działająca dokładnie jak podana jako argument funkcja `a`, z tym, że argumenty nowej funkcji będą 
+odwrócone względem orginału.
+```
+function reverse(a) {...
+```
+Przykład:
+```
+let fn1 = (a, b) => a - b;
+let fn2 = reverse(fn1);
+console.log(fn1(2, 1)); // 1
+console.log(fn2(2, 1)); // -1
+```

@@ -1,0 +1,15 @@
+let _correct = 0;
+let _failed = 0;
+let _failedTests = [];
+const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failedTests.push(id); }; };
+let fn1 = compose(x => x*2, x => x + 1, x => x - 5);
+let fn2 = compose(x => x + "c", x => x + "b", x => x + "a");
+let fn3 = compose();
+let fn4 = compose(x => x + 1, x => x + 1, x => x + 1, x => x + 1, x => x + 1);
+test(1, fn1(100) === 192);
+test(2, fn1(5) === 2);
+test(3, fn1(99) === 190);
+test(4, fn2("") === "cba");
+test(5, fn3(1) === 1);
+test(6, fn4(1) === 6);
+[_correct, _failed, _failedTests];
