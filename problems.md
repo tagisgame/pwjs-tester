@@ -205,3 +205,10 @@ let fn2 = carry((a, b, c) => a + b - c);
 console.log(fn2(5)(4)(2)); // 7
 ```
 
+## Życie obiektów
+
+### problem020
+
+Stwórz funkcję kontruktora `Square(a)`, przyjmującą jako argument długość boku kwadratu. Tworzone za pomocą kontruktora obiekty muszą mieć 
+metodę `getArea()` zwracającą pole kwadratu oraz metodę `getPerimeter()` zwracającą obwód figury.
+

@@ -1,0 +1,11 @@
+let _correct = 0;
+let _failed = 0;
+let _failedTests = [];
+const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failedTests.push(id); }; };
+let s1 = new Square(2);
+let s2 = new Square(3);
+test(1, s1.getArea() === 4);
+test(2, s2.getArea() === 9);
+test(3, s1.getPerimeter() === 8);
+test(4, s2.getPerimeter() === 12);
+[_correct, _failed, _failedTests];
