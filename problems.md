@@ -189,3 +189,19 @@ let fn2 = reverse(fn1);
 console.log(fn1(2, 1)); // 1
 console.log(fn2(2, 1)); // -1
 ```
+
+### problem019
+
+Napisz funkcję `carry(a)`, której wynikiem będzie nowa funkcja przyjmująca `n-1` argumentów względem orginału, ta z kolei zwraca funkcję przyjmującą `n-2` argumenty względem orginału itd.
+Celem nowej funkcji jest wywołanie kaskady funkcji, z której każda z nich jest argumentowa.
+```
+function carry(a) {...
+```
+Przykład:
+```
+let fn1 = carry((a, b) => a + b);
+console.log(fn1(5)(4)); // 9
+let fn2 = carry((a, b, c) => a + b - c);
+console.log(fn2(5)(4)(2)); // 7
+```
+
