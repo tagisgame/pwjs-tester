@@ -153,7 +153,7 @@ Metoda `pop(a)` zdejmie ze stosu `a` elementów i zwróci ostatni z nich, tj. te
 
 ### problem016
 
-Napisz funkcję `maybe(a, b, c)`, gdzie `a` to predykat, czyli funkcja zwracająca wartość logiczną; `b` to dowolna funkcja, c jest dowolną wartością.
+Napisz funkcję `maybe(a, b, c)`, gdzie `a` to predykat, czyli funkcja zwracająca wartość logiczną, przyjmujący na wejście wartość `c`; `b` to dowolna funkcja, c jest dowolną wartością.
 Funkcja powinna zwracać wartość funkcji `b(c)` jeżeli `a` zwraca `true`, lub `c` w przeciwnym przypadku.
 ```
 function maybe(a, b, c) {...
