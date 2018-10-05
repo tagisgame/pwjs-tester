@@ -9,7 +9,7 @@ let fn4 = compose(x => x + 1, x => x + 1, x => x + 1, x => x + 1, x => x + 1);
 test(1, fn1(100) === 192);
 test(2, fn1(5) === 2);
 test(3, fn1(99) === 190);
-test(4, fn2("") === "cba");
+test(4, fn2("") === "abc");
 test(5, fn3(1) === 1);
 test(6, fn4(1) === 6);
 [_correct, _failed, _failedTests];
