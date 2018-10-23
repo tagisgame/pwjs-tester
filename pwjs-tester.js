@@ -6,10 +6,10 @@ const low = require('lowdb');
 app.set('view engine', 'hbs');
 
 const dataPath = process.argv[2] || "./data";
-const resultsDB = low(new FileSync(dataPath + '/results.json'));
 
 app.get('/', function (req, res) {
     let sha1 = req.query.sha1 || "";
+    let resultsDB = low(new FileSync(dataPath + '/results.json'));
     res.render('index.hbs', {
         results: resultsDB.get('results').filter({
             'student': sha1
