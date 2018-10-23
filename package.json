@@ -18,6 +18,9 @@
   "homepage": "https://github.com/lazarow/pwjs-tester#readme",
   "dependencies": {
     "crc": "^3.8.0",
+    "lowdb": "^1.0.0",
+    "simple-node-logger": "^0.93.40",
+    "sync-exec": "^0.6.2",
     "vm2": "^3.6.3"
   }
 }

@@ -1,0 +1,6 @@
+version: '3'
+services:
+    pwjstester:
+        build: .
+        volumes:
+        - ./data:/root/data
