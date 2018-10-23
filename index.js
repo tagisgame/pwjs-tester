@@ -7,16 +7,14 @@ const { crc32 } = require('crc');
 const exec = require('sync-exec');
 const log = require('simple-node-logger').createSimpleLogger();
 
-const dataPath = "/root/src/data";
-
-const studentsDB = low(new FileSync(dataPath + '/students.json'));
-const resultsDB = low(new FileSync(dataPath + '/results.json'));
+const studentsDB = low(new FileSync('/root/src/data/students.json'));
+const resultsDB = low(new FileSync('/root/src/data/results.json'));
 for (let student of studentsDB.get('students')) {
     log.info('Running a job for the student: ' + student.sha1);
     log.info('Cleaning the student scripts folder');
-    exec('rm -rf student-scripts');
+    exec('rm -rf /root/src/student-scripts');
     log.info('Cloning the student GIT repository');
-    exec('git clone --depth=1 --branch=master ' + student.repo + ' student-scripts');
+    exec('git clone --depth=1 --branch=master ' + student.repo + ' /root/src/student-scripts');
     exec('rm -rf student-scripts/.git');
     log.info('Testing');
     for (let problem of problems) {
@@ -123,4 +121,4 @@ for (let student of studentsDB.get('students')) {
     }
 }
 log.info('Coping results');
-exec('cp ' + dataPath + '/results.json ' + dataPath + '/results-final.json');
+exec('cp /root/src/data/results.json /root/src/data/results-final.json');
