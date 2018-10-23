@@ -7,7 +7,7 @@ const { crc32 } = require('crc');
 const exec = require('sync-exec');
 const log = require('simple-node-logger').createSimpleLogger();
 
-const dataPath = process.argv[2] || "data";
+const dataPath = "data";
 
 const studentsDB = low(new FileSync(dataPath + '/students.json'));
 const resultsDB = low(new FileSync(dataPath + '/results.json'));
@@ -94,7 +94,7 @@ for (let student of studentsDB.get('students')) {
                     timestamp: + new Date(),
                     student: student.sha1,
                     problem: problem,
-                    status: "sucess",
+                    status: "success",
                     tests: {
                         count: testResult[0] + testResult[1],
                         success: testResult[0],
