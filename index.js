@@ -7,7 +7,7 @@ const { crc32 } = require('crc');
 const exec = require('sync-exec');
 const log = require('simple-node-logger').createSimpleLogger();
 
-const dataPath = process.argv[2] || "./data";
+const dataPath = process.argv[2] || "data";
 
 const studentsDB = low(new FileSync(dataPath + '/students.json'));
 const resultsDB = low(new FileSync(dataPath + '/results.json'));
