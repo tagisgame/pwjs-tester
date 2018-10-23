@@ -88,7 +88,7 @@ for (let student of studentsDB.get('students')) {
                 resultsDB.get('results').remove({
                     student: student.sha1,
                     problem: problem,
-                    status: "sucess"
+                    status: "success"
                 }).write();
                 resultsDB.get('results').push({
                     timestamp: + new Date(),
@@ -119,7 +119,7 @@ for (let student of studentsDB.get('students')) {
                 crc: studentScriptCRC
             }).write();
         }
-        log.info('Done');
+        log.info(problem + ' Done');
     }
 }
 log.info('Coping results');
