@@ -7,4 +7,6 @@ test(2, stringRotate('UniwersytetŚląski', 1) === 'niwersytetŚląskiU');
 test(3, stringRotate('UniwersytetŚląski', 2) === 'iwersytetŚląskiUn');
 test(4, stringRotate('UniwersytetŚląski', -1) === '');
 test(5, stringRotate('UniwersytetŚląski', 'a') === '');
+test(6, stringRotate('ab', 0) === 'ab'); // t
+test(7, stringRotate('ab', 1) === 'ba'); // t
 [_correct, _failed, _failedTests];

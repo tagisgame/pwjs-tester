@@ -7,4 +7,5 @@ test(2, divisible(4, 3) === false);
 test(3, divisible(12, 2, 3, 4, 7) === false);
 test(4, divisible(12, 2, 3, 4, 6) === true);
 test(5, divisible(20, 1, 20) === true);
+test(6, divisible(6, 3) === true); // t
 [_correct, _failed, _failedTests];

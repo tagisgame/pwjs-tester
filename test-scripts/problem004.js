@@ -5,4 +5,5 @@ const test = (id, test) => { if (test) { _correct++; } else { _failed++; _failed
 test(1, getTotalNumberOfNewYaersEveSundays(2013, 2023) === 2);
 test(2, getTotalNumberOfNewYaersEveSundays(1998, 2188) === 27);
 test(3, getTotalNumberOfNewYaersEveSundays(1998, 2000) === 0);
+test(4, getTotalNumberOfNewYaersEveSundays(1999, 2000) === 0); // t
 [_correct, _failed, _failedTests];

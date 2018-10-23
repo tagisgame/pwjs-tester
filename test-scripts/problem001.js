@@ -8,4 +8,5 @@ test(3, triangleArea(3, 6, 7) === 8.94);
 test(4, triangleArea(3, 4, 10) === -1);
 test(5, triangleArea(3, 4, -5) === -1);
 test(6, triangleArea(3, 4, 0) === -1);
+test(7, triangleArea(5, 5, 8) === 12); //t
 [_correct, _failed, _failedTests];
