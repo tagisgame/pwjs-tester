@@ -7,7 +7,6 @@ RUN apt-get install --yes cron
 RUN apt-get install --yes git
 COPY . /root/src
 RUN cd /root/src && mv ./node_modules ./node_modules.tmp && mv ./node_modules.tmp ./node_modules && npm install
-RUN mkdir /root/data
 ADD crontab /etc/cron.d/pwsj-tester-cron
 RUN chmod 0644 /etc/cron.d/pwsj-tester-cron
 RUN touch /var/log/cron.log

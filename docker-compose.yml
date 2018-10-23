@@ -3,4 +3,4 @@ services:
     pwjstester:
         build: .
         volumes:
-        - ./data:/root/data
+        - ./data:/root/src/data
