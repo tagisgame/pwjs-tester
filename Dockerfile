@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get install --yes nodejs
 RUN apt-get install --yes npm
 RUN apt-get install --yes cron
+RUN apt-get install --yes git
 COPY . /root/src
 RUN cd /root/src && mv ./node_modules ./node_modules.tmp && mv ./node_modules.tmp ./node_modules && npm install
 RUN mkdir /root/data
