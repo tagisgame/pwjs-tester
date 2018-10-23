@@ -20,8 +20,8 @@ for (let student of studentsDB.get('students')) {
     exec('rm -rf student-scripts/.git');
     log.info('Testing');
     for (let problem of problems) {
-        let studentScriptPath = 'student-scripts/' + problem + '.js';
-        let testScriptPath = 'test-scripts/' + problem + '.js';
+        let studentScriptPath = '/root/src/student-scripts/' + problem + '.js';
+        let testScriptPath = '/root/src/test-scripts/' + problem + '.js';
         resultsDB.get('results').remove({
             student: student.sha1,
             problem: problem,
