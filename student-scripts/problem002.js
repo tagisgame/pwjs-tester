@@ -1,23 +1,26 @@
-stringRotate("siema", 2);
-
-function stringRotate(a, b){
+function stringRotate (a, b){
   //Validating input
-  if(b < 0)
+  if ((typeof a !== "string") || (typeof b !== "number")) {
     return "";
-
-  for(let i = 0; i < b; i++){
-    let buffer = a[0];
-    //console.log(buffer, a.length);
-
-    for(let j = 0; j < a.length; j++){
-      //console.log(j);
-      if(j < a.length)
-        a[j] = a[j+1];
-      else
-        a[j] = buffer;
-    }
+  }
+  else if ((b < 0) || !(Number.isInteger(b))) {
+    return "";
   }
 
-  console.log(a);
-  return word;
+  //Final word
+  var word = new Array();
+  word[0] = a;
+  for (let i = 0; i < b; i++) {
+    word[i+1] = "";
+  }
+
+  for (let i = 0; i < b; i++) {
+    //Making 1st letter buffer
+    var buf = word[i].charAt(0);
+
+    for (let j = 0; j < a.length; j++) {
+      word[i+1] += (j+1 < a.length) ? word[i].charAt(j+1) : buf;
+    }
+  }
+  return word[b];
 }
