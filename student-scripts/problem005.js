@@ -1,8 +1,15 @@
-function strangeSum(a, b) {
+
+console.log(strangeSum(1,-1));
+
+function strangeSum (a, b) {
   //Input validation
-  if(((typeof a !== "number") || (typeof b !== "number"))/* ||
-  ((Number.isInteger(a)) || (Number.isInteger(b)))*/)
+  if (typeof a !== "number" || typeof b !== "number"){
     return null;
+  }
+  else if (!(Number.isInteger(a)) || !(Number.isInteger(b))){
+    return null;
+  }
+
 
   if(a === b)
     return 3 * (a+b);
