@@ -7,20 +7,20 @@ function stringRotate (a, b){
     return "";
   }
 
-  //Final word
-  var word = new Array();
-  word[0] = a;
-  for (let i = 0; i < b; i++) {
-    word[i+1] = "";
-  }
+  //Word buffers
+  var word1 = a;
+  var word2 = "";
 
   for (let i = 0; i < b; i++) {
     //Making 1st letter buffer
-    var buf = word[i].charAt(0);
+    var buf = word1.charAt(0);
 
     for (let j = 0; j < a.length; j++) {
-      word[i+1] += (j+1 < a.length) ? word[i].charAt(j+1) : buf;
+      word2 += (j+1 < a.length) ? word1.charAt(j+1) : buf;
     }
+
+    word1 = word2;
+    word2 = "";
   }
-  return word[b];
+  return word1;
 }
