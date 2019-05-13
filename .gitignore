@@ -1,4 +1,2 @@
 nbproject
 node_modules
-student-scripts/*
-!student-scripts/.gitkeep
